@@ -15,6 +15,24 @@ nothing to `pip install`.
 - Tkinter (bundled with most Python installs; on some Linux distros install it
   with e.g. `sudo apt install python3-tk`)
 
+## Install
+
+```sh
+./install.sh
+```
+
+This checks for Python 3, makes sure Tkinter is available (offering to install
+it via your package manager if not), and drops a `textbrowser` launcher into
+`~/.local/bin`. To install elsewhere:
+
+```sh
+PREFIX=/usr/local ./install.sh    # installs to /usr/local/bin (may need sudo)
+```
+
+After install you can just run `textbrowser example.com` from anywhere.
+
+Installing isn't required — you can always run the script directly (see below).
+
 ## Run it
 
 ```sh
